@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "built/screen.css"}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap">
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}{{{block "body_class"}}}">
+    <div class="site">
+        {{> header}}
+
+        {{#is "home"}}
+            {{#unless @member}}
+                {{> cover}}
+            {{/unless}}
+            {{> featured}}
+        {{/is}}
+
+        <div class="site-content">
+            {{{body}}}
+        </div>
+
+        {{> footer}}
+        {{> pswp}}
+    </div>
+
+    {{!-- Fixes 100vh issue on mobile browsers with toolbar on the bottom --}}
+    <script>
+        if (document.body.classList.contains('with-full-cover')) {
+            document.getElementsByClassName('cover')[0].style.height = window.innerHeight + 'px';
+        }
+    </script>
+
+    <script>
+        var feed = document.querySelector('.post-feed');
+        if (feed && !feed.classList.contains('related-feed')) {
+            var wrapper = document.querySelector('.feed-layout');
+            var feedLayout = localStorage.getItem('edition_layout');
+            switch (feedLayout) {
+                case 'compact':
+                    wrapper.classList.remove('expanded');
+                    feed.classList.remove('expanded');
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+
+    <script src="{{asset "built/main.min.js"}}"></script>
+
+    {{ghost_foot}}
+</body>
+
+</html>

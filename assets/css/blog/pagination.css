@@ -1,0 +1,27 @@
+.pagination,
+body:not(.paged-next) .infinite-scroll-button {
+    display: none;
+}
+
+.infinite-scroll-action {
+    display: flex;
+    justify-content: center;
+}
+
+.infinite-scroll-button {
+    margin-top: 3rem;
+    min-width: 110px;
+}
+
+.infinite-scroll-button .loader {
+    display: none;
+    line-height: 0;
+}
+
+.infinite-scroll-button.loading .label {
+    display: none;
+}
+
+.infinite-scroll-button.loading .loader {
+    display: inline;
+}

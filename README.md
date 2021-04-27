@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Edition
 
-You can use the [editor on GitHub](https://github.com/AlanLiZQ6/AlanLIZQI.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+The newsletter theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Edition! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Edition/releases) page.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+&nbsp;
 
-### Markdown
+# Development
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Edition styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
-```markdown
-Syntax highlighted code block
+```bash
+# Install
+yarn
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+# Run build & watch for changes
+$ yarn dev
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
 
-### Jekyll Themes
+The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AlanLiZQ6/AlanLIZQI.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```bash
+# create .zip file
+yarn zip
+```
 
-### Support or Contact
+# PostCSS Features Used
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+
+# Copyright & License
+
+Copyright (c) 2013-2021 Ghost Foundation - Released under the [MIT license](LICENSE).
