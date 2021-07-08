@@ -146,6 +146,18 @@
 .footer {
     
     height: 160px;
-   
+    
     background-color:gray;
+}
+
+.version {
+    display: inline-block;
+    width: 230px;
+    height: 65px;
+    
+    margin-top: 47.5px;
+    margin-left: 160px;
+    text-align: center;
+    line-height: 30px ;
+    color:#dadada;
 }
