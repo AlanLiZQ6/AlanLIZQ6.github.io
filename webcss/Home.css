@@ -112,19 +112,25 @@
 
 .sources {
     text-align: center;
+    width: 1210px;
+    height: 360px;
+    margin: auto;
 }
 
 .source {
     display: inline-block;
-    width: 290px;
+    width: 595px;
     height: 340px;
     background-color: grey;
     margin: 10px 5px 10px 5px ;
     border-radius: 10px;
     background-image: url(images/maintenance.jpg);
+    float:left;
     
     
 }
+
+
 
 .source:hover {
     box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, .3);
