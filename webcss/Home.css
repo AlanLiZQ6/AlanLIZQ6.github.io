@@ -11,6 +11,8 @@
     width: 1280px;
     position: fixed;
     float: left;
+    z-index: 1;
+    
 
 }
 
@@ -94,21 +96,38 @@
 
 
 .first_page {
-    width: 1280px;
     height: 462px;
-    background-image: url(images/matteo-catanese-4KrQq8Z6Y5c-unsplash.jpg);
-    text-align: center;
+    background-image: url(images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
+    
 }
 
-.Bigname {
-    height: 462px;
-    line-height: 462px;
-    text-align: center;
-    font-size: 50px;
-    color:gold;
-    
-    
+.logo {
+    height: 120px;
+    width: 130px;
+    position: relative;
+    left: 575px;
+    top: 131px;
+    margin-top: 0px;
+    background-color: whitesmoke ;
+    border-radius: 15px;
+
     }
+
+.name {
+    height: 60px;
+    width: 150px;
+    position: relative;
+    left: 565px;
+    top: 171px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(245, 245, 245);
+
+}
+
+
 
 .sources {
     text-align: center;
