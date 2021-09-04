@@ -98,7 +98,7 @@
 .first_page {
     height: 462px;
     background-image: url(images/lucas-benjamin-wQLAGv4_OYs-unsplash.jpg);
-    
+    width: auto;
 }
 
 .logo {
@@ -146,6 +146,10 @@
     background-color:#f5f5f5;
     
     
+}
+
+.source a {
+    color: black;
 }
 
 .box1 {
