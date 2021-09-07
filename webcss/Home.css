@@ -134,6 +134,7 @@ li {
 
 
 .source {
+    position: relative;
     display: inline-block;
     width: 1280px;
     height: 340px;
@@ -149,11 +150,11 @@ li {
 
 
 .box1 {
+    position: absolute;
+    left: 41px;
     width: 575px;
     height: 340px;
     border-radius: 10px;
-    margin-left: 52.5px;
-    margin-right: 10px;
     background-color: black;
 }
 
@@ -175,12 +176,13 @@ li {
 
 
 .box2 {
+    position: absolute;
+    right: 41px;
     width: 575px;
     height: 340px;
     border-radius: 10px;
-    margin-left: 10.5px;
-    margin-right: 22.5px;
     background-color: black;
+    overflow: hidden;
 }
 
 .box2 img {
@@ -192,8 +194,8 @@ li {
 
 
 
-.source:hover {
-    
+.source ul li :hover {
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, .3);
 }
 
 .article {
