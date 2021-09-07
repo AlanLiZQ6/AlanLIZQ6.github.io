@@ -3,10 +3,13 @@
     padding: 0;
 }
  
+li {
+    list-style: none;
+}
 
 .header {
    
-    background-color:#f5f5f5;
+    background-color:#ffffff;
     height: 45px;
     width: 1280px;
     position: fixed;
@@ -18,19 +21,21 @@
 
 .nav {
     margin: auto;
-    width: 960px;
+    width: 900px;
     height: 45px;
-    float: none;
-    background-color: paleturquoise;
+    background-color: #ffffff;
     
     
 }
 
 
-
 .nav ul li {
-    list-style: none;
     float: left;
+    display: block;
+    list-style: none;
+    width: 100px;
+    height: 45px;
+    margin-left:66.5px;
 }
 
 
@@ -41,14 +46,14 @@
     
     display: inline-block;
     height: 45px ;
+    width: 100px;
     line-height: 45px;
-    padding-left: 40px;
-    padding-right: 40px;
-    
-    
+    text-align: center;
+    background-color:#000000;
+    border-radius: 30px;
 
     /*字体*/
-    color: #484848;
+    color:rgb(225, 225, 225);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -59,33 +64,10 @@
 
 
 
-.title:hover {
-    background-color: wheat;
-}
 
-
-.search {
-    margin: 5px;
-    width: 185px;
-    height: 30px;
-    margin-left: 20px;
-    font-size: 16px;
-    font-family: yahe;
-    padding-left: 15px;
-    color: grey;
-    margin-right: 0px;
+.nav ul li :hover {
+    box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, .3);
+    color: rgb(255, 255, 255);
+    border-bottom: rgb(225, 225, 225) solid 6px;
     
 }
-
-.search_botton {
-    margin: 5px;
-    height: 34px;
-    width: 34px;
-    margin-left: 0px;
-    background-color: #52bdf9;
-    
-    
-
-
-}
-
