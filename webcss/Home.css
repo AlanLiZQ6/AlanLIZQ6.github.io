@@ -11,7 +11,7 @@ li {
    
     background-color:#ffffff;
     height: 45px;
-    width: 1280px;
+    width: 100%;
     position: fixed;
     float: left;
     z-index: 1;
@@ -82,7 +82,7 @@ li {
 
 .loregion {
     position: relative;
-    width: 1280px;
+    width: auto;
     height: 250px;
     background-color: black;
 }
@@ -93,13 +93,13 @@ li {
 
 
 .first_page {
-    height: 400px;
+    height: 350px;
     width: auto;
 }
 
 .fimg {
-    height: 400px;
-    width: 1280px;
+    height: 350px;
+    width: 100%;
     z-index: -1;
 }
 
