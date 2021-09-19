@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="webcss/Home.css">
-    
+    <title>Intro</title>
+    <link rel="stylesheet" href="webcss/intro.css">
 </head>
 
-
-   
 
 <body>
 
@@ -49,9 +46,9 @@
                     </ul>
                 </li>
 
-                <li ><a href="intro.html" class="title t5">About</a>
+                <li ><a href="#" class="title t5">About</a>
                     <ul class="innerUL">
-                        <li><a href="intro.html">Intro</a></li>
+                        <li><a href="">Intro</a></li>
                         <li><a href="">Firends</a></li>
                         <li><a href="">Portfolio</a></li>
                     </ul>
@@ -62,56 +59,29 @@
     </div>
 
 
+    <ul class="text">
+        <li><h1> Who Am I </h1></li>
+        <li><img src="images/logo.png" alt="" title="logo"></li>
+    </ul>
 
-     <div class="loregion">
-        <div class="logo">
-           <img src="12345.png"> 
-        </div>
-        <div class="name">
-            Alan Li
-        </div>
-     </div>
-
-
-
-     <div class="first_page">
-        <img src="images/original.jpg" alt="" class="fimg">
-        
-        </div>
-
-
-
-    <div class="source">
-        <ul>
-                <li>
-                    <a href="html_note.html" target="_self">
-                        <div class="box1">
-                            <img src = "images/html_wallpage.jpg" alt="">
-                            Waiting
-                        </div>         
-                    </a> 
-                </li> 
-                <li> 
-                    <a href="#" target="_self"> 
-                        <div class="box2">
-                            <img src = "images/box2.jpg" alt="">
-                            Waiting
-                        </div> 
-                            
-                    </a>  
-                </li> 
-        </ul>
-    </div> 
-    
-
-
-    <div class="article">
-
-    </div>
-
-    <div class="article article2">
-    
-    </div>
+    <p> 
+        Congradulation !!! You discover a treasured and fantastic relic in this blog.
+        <br/>
+        <br/>
+        Please give me a little bit time to do an introduction.
+        <br/>
+        <br/>
+        My name is ALan Li, an undergraduated international student in Irvine California, 
+        and my hometown is Zhengou Henan in China , which is one Pacific Ocean away from CA.
+        <br/>
+        <br/>
+        Actually, my major is CE which is impertinent to the construction of website, but I am just
+        passionately interested in software and front-end program and study some programming languages by myself.
+        <br/>
+        <br/>
+        Therefore, this blog is my first imperfect perfect composition, and I hope that it can evolve to be masterpiece.
+        Do not mock it, please give it a little time !
+    </p>
 
     <div class="footer">
         <div class="version">
@@ -122,26 +92,21 @@
         <div class="other_web_link">
         </div>
     </div>
-        
-  
+
+    <script>
+        var outerUL = document.querySelector(".outerUL");
+        var lis = outerUL.children;
+        for (var i = 0; i < lis.length; i++) {
+                lis[i].onmouseover = function() {
+                    this.children[1].style.display = 'block';
+                }
+                lis[i].onmouseout = function() {
+                    this.children[1].style.display = 'none';
+                }
+            }
+    </script>
 
 </body>
-
-<script>
-    var outerUL = document.querySelector(".outerUL");
-    var lis = outerUL.children;
-    for (var i = 0; i < lis.length; i++) {
-            lis[i].onmouseover = function() {
-                this.children[1].style.display = 'block';
-            }
-            lis[i].onmouseout = function() {
-                this.children[1].style.display = 'none';
-            }
-        }
-</script>
-
-
-
 
 
 </html>

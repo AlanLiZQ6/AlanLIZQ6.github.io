@@ -29,7 +29,7 @@ li {
 }
 
 
-.nav ul li {
+.nav>ul>li {
     float: left;
     display: block;
     list-style: none;
@@ -60,14 +60,10 @@ li {
     
 }
 
-
-
-
-
-
-.nav ul li :hover {
+.nav>ul>li :hover {
     box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, .3);
     color: rgb(255, 255, 255);
     border-bottom: rgb(225, 225, 225) solid 6px;
-    
 }
+
+
