@@ -10,18 +10,107 @@
 
 </head>
 <body>
+
     <div class="header">
         <div class="nav">
-            <ul>
-                <li><a href="index.html" class="title t1" target="_self">Home</a></li>
-                <li><a href="#" class="title t2">Story</a></li>
-                <li><a href="#" class="title t3">Sources</a></li>
-                <li><a href="#" class="title t4">Projects</a></li>
-                <li><a href="#" class="title t5">About</a></li>
+            <ul class="outerUL">
+                <li ><a href="index.html" class="title t1" target="_self">Home</a>
+                    <ul class="innerUL">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li ><a href="#" class="title t2">Story</a>
+                    <ul class="innerUL">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li ><a href="#" class="title t3">Sources</a>
+                    <ul class="innerUL">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li ><a href="#" class="title t4">Projects</a>
+                    <ul class="innerUL">
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </li>
+
+                <li ><a href="intro.html" class="title t5">About</a>
+                    <ul class="innerUL">
+                        <li><a href="intro.html">Intro</a></li>
+                        <li><a href="">Firends</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
     </div>
 
+    <div class="tit">
+    </div>
+
+    <div class="chatbox">
+        <textarea name = "" id = ""></textarea>
+        <button>Submit</button>
+        <ul></ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="version">
+            @ 2021 Alan Li <br />
+            Brilliantly. Masterpiece.
+        </div>
+        <div>
+        <div class="other_web_link">
+        </div>
+    </div>
+
+
+    <script>
+        //folden header
+        var outerUL = document.querySelector(".outerUL");
+        var lis = outerUL.children;
+        for (var i = 0; i < lis.length; i++) {
+                lis[i].onmouseover = function() {
+                    this.children[1].style.display = 'block';
+                }
+                lis[i].onmouseout = function() {
+                    this.children[1].style.display = 'none';
+                }
+            }
+
+        //chatbox
+        var text = document.querySelector("textarea");
+        var btu = document.querySelector("button");
+        var ul = document.querySelector("ul");
+
+        
+        
+    </script>
     
     
 </body>
