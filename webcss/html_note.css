@@ -13,12 +13,13 @@ a {
 
 .header {
    
-    background-color:#ffffff;
+    background-color:white;
     height: 45px;
     width: 100%;
     position: fixed;
     float: left;
-    z-index: 2;
+    z-index: 1;
+
     
 
 }
