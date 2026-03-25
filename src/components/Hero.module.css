@@ -1,0 +1,131 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 120px 24px 80px;
+  position: relative;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.greeting {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: var(--font-sans);
+  letter-spacing: 0.02em;
+  animation: fadeUp 0.6s ease both;
+}
+
+.name {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+
+.tagline {
+  font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  max-width: 700px;
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.description {
+  font-size: 1.05rem;
+  color: var(--text);
+  max-width: 540px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  animation: fadeUp 0.6s ease 0.3s both;
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  animation: fadeUp 0.6s ease 0.4s both;
+}
+
+.primaryBtn {
+  padding: 14px 32px;
+  background: var(--accent);
+  color: white !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: all var(--transition);
+}
+
+.primaryBtn:hover {
+  filter: brightness(0.85);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-dim);
+}
+
+.secondaryBtn {
+  padding: 14px 32px;
+  border: 1px solid var(--border);
+  color: var(--text-heading) !important;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: all var(--transition);
+}
+
+.secondaryBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent) !important;
+}
+
+.decorLine {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--border), transparent);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 60px;
+    min-height: auto;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryBtn, .secondaryBtn {
+    text-align: center;
+  }
+}

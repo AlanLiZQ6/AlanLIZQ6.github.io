@@ -1,148 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlanLZQ</title>
-    <link rel="icon" href="favion.ico" type="image/x-icon">
-    <link rel="stylesheet" href="webcss/Home.css">
-    <link rel="shortcut icon" href="favion.ico">    
-</head>
-
-
-   
-
-<body>
-
-    <div class="header">
-        <div class="nav">
-            <ul class="outerUL">
-                <li ><a href="index.html" class="title t1" target="_self">Home</a>
-                    <ul class="innerUL">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </li>
-
-                <li ><a href="#" class="title t2">Story</a>
-                    <ul class="innerUL">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </li>
-
-                <li ><a href="#" class="title t3">Sources</a>
-                    <ul class="innerUL">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </li>
-
-                <li ><a href="#" class="title t4">Projects</a>
-                    <ul class="innerUL">
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </li>
-
-                <li ><a href="intro.html" class="title t5">About</a>
-                    <ul class="innerUL">
-                        <li><a href="intro.html">Intro</a></li>
-                        <li><a href="">Firends</a></li>
-                        <li><a href="">Portfolio</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-
-
-     <div class="loregion">
-        <div class="logo">
-           <img src="12345.png"> 
-        </div>
-        <div class="name">
-            Alan Li
-        </div>
-     </div>
-
-
-
-     <div class="first_page">
-        <img src="images/original.jpg" alt="" class="fimg">
-        
-        </div>
-
-
-
-    <div class="source">
-        <ul>
-                <li>
-                    <a href="html_note.html" target="_self">
-                        <div class="box1">
-                            <img src = "images/html_wallpage.jpg" alt="">
-                            Waiting
-                        </div>         
-                    </a> 
-                </li> 
-                <li> 
-                    <a href="#" target="_self"> 
-                        <div class="box2">
-                            <img src = "images/box2.jpg" alt="">
-                            Waiting
-                        </div> 
-                            
-                    </a>  
-                </li> 
-        </ul>
-    </div> 
-    
-
-
-    <div class="article">
-
-    </div>
-
-    <div class="article article2">
-        
-    </div>
-
-    <div class="footer">
-        <div class="version">
-            @ 2021 Alan Li <br />
-            Brilliantly. Masterpiece.
-        </div>
-        <div>
-        <div class="other_web_link">
-        </div>
-    </div>
-        
-  
-
-</body>
-
-<script>
-    var outerUL = document.querySelector(".outerUL");
-    var lis = outerUL.children;
-    for (var i = 0; i < lis.length; i++) {
-            lis[i].onmouseover = function() {
-                this.children[1].style.display = 'block';
-            }
-            lis[i].onmouseout = function() {
-                this.children[1].style.display = 'none';
-            }
-        }
-</script>
-
-
-
-
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favion.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhuoqi Li | ECE @ CMU</title>
+    <meta name="description" content="Zhuoqi Li - M.S. in Electrical and Computer Engineering at Carnegie Mellon University" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
