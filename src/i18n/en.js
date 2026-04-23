@@ -74,16 +74,6 @@ export default {
           'Designed a new higher-efficiency module structure for continued simulation testing',
         ],
       },
-      {
-        title: 'Intern — CNN Model Development',
-        role: 'Intern',
-        org: 'Institute of Software, Chinese Academy of Sciences',
-        period: 'Jul 2023 — Aug 2023',
-        points: [
-          'Constructed and trained a CNN model with Adam optimizer and StepLR Scheduler',
-          'Gathered 4,000 facial images using OpenCV, achieving 70% accuracy on the trained model',
-        ],
-      },
     ],
   },
   projects: {
